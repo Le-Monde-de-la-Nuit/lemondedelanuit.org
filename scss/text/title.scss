@@ -1,0 +1,21 @@
+@import "../mixins";
+
+.title {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  &.is-1 {
+    @include center;
+    &.is-not-centered {
+      @include left;
+    }
+  }
+}
+.subtitle {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  position: relative;
+  top: -2rem;
+}
+.center {
+  @include center;
+}

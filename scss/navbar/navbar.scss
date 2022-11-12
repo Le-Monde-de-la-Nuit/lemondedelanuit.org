@@ -1,0 +1,23 @@
+@import "../color";
+.navbar {
+  background: $second;
+  padding: 1rem 2rem;
+  &-item {
+    color: $primary;
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 0 1rem;
+  }
+  &-left {
+    position: relative;
+    left: 0;
+  }
+  &-right {
+    position: relative;
+    right: 0;
+  }
+  &-logo {
+    aspect-ratio: 5/3;
+    width: 3rem;
+  }
+}

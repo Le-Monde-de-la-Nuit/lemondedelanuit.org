@@ -9,8 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "scss": "^0.2.4",
     "typescript": "^4.6.4",
     "vite": "^3.2.3",
-    "scss": "^0.2.4"
+    "sass": "^1.56.1"
   }
 }
