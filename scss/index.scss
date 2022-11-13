@@ -1,10 +1,21 @@
 @import "reset";
+@import "color";
 @import "navbar/navbar";
 @import "text/size";
 @import "text/title";
 @import "spacing/margin";
+@import "sections/header";
 
 body {
-  font-size: 16px;
+  font-size: 18px;
   font-family: Roboto, sans-serif;
+  background: $primary;
+}
+
+#app {
+  width: 70vw;
+  padding: 2rem 10rem;
+  margin: -2rem auto;
+  background: $dark-primary;
+  border-radius: 15px;
 }

@@ -9,6 +9,10 @@
       @include left;
     }
   }
+  &.little-padding {
+    padding-top: 2rem;
+  }
+  padding-top: 5rem;
 }
 .subtitle {
   font-weight: normal;

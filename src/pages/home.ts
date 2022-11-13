@@ -5,6 +5,7 @@ export default function home() {
         return;
     }
     app.innerHTML = `
-        <h1>Home</h1>
+    <h2 class="is-2 title little-padding">Accueil</h2>
+    <p class="">Bienvenue sur le site de l'association</p>
     `;
 }
