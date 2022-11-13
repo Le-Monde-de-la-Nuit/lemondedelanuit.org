@@ -1,0 +1,26 @@
+@import "../color";
+
+.card {
+  position: relative;
+  display: block;
+  box-shadow: 5px 5px 50px rgba($black, 0.75);
+  border-radius: 16px;
+  &-image {
+    aspect-ratio: 5/3;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    border-bottom: rgba($grey, 0.75) 3px solid;
+  }
+  &-body {
+    padding: 2rem 2rem;
+  }
+  &-title {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  &-invisible-link {
+    inset: 0;
+    position: absolute;
+  }
+}

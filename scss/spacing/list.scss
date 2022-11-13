@@ -1,0 +1,11 @@
+.list {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  &.list--three {
+    grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+  }
+  &.list--two {
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+}

@@ -1,0 +1,24 @@
+@import "../color";
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  border: none;
+  color: $accent;
+  width: 15%;
+  font-size: 1.25em;
+  transition: .5s;
+  &-primary {
+    background: $accent;
+    padding: 1rem 2rem;
+    color: $white;
+    &:hover {
+      color: $white;
+      background: $light-accent;
+    }
+  }
+  &.center {
+    text-align: center;
+    margin: 0 auto;
+  }
+}

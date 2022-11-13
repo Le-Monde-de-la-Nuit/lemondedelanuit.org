@@ -1,0 +1,16 @@
+.is {
+  &-right {
+    text-align: right;
+    margin-right: auto;
+    &.not-text {
+      text-align: inherit;
+    }
+  }
+  &-left {
+    text-align: left;
+    margin-left: auto;
+    &.not-text {
+      text-align: inherit;
+    }
+  }
+}
