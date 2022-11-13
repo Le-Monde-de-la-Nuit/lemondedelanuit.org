@@ -11,6 +11,7 @@
       <div class="navbar-left">
         <img src="" alt="logo" class="logo navbar-logo navbar-item">
         <a href="/" class="navbar-item navbar-link">Accueil</a>
+        <a href="/news" class="navbar-item navbar-link">Nouveautés</a>
         <a href="/about" class="navbar-item navbar-link">A propos</a>
       </div>
     </nav>
@@ -20,9 +21,60 @@
         <h2 class="header-subtitle header-item subtitle is-4 center">L'Espoir de changer le monde</h2>
       </div>
     </header>
-    <div id="app"></div>
+    <div id="app" class="content">
+      <custom-section title="Nouveautés">
+        <div class="list list--three">
+          <news-card src="https://via.placeholder.com/500x300" href="#"
+                     title="Nouveauté 1" alt="Image">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a augue commodo, euismod turpis non, porttitor lorem. Donec eu nisi lorem. Aliquam non lacus volutpat, egestas lorem quis, mattis eros. Vivamus iaculis odio id tortor finibus posuere. Phasellus nec tellus porta, rhoncus felis nec, elementum lectus. Sed quis metus tincidunt, euismod turpis nec, aliquam nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis lorem quis odio pharetra convallis. Aliquam ultrices vestibulum sollicitudin. Duis at magna vitae augue hendrerit interdum. Ut commodo mollis diam, ut convallis enim vehicula eu. Duis vel elit sed odio porttitor scelerisque. Aliquam sit amet rutrum ante, id imperdiet nibh. Donec nec mauris et libero malesuada sollicitudin sit amet quis tellus. </p>
+          </news-card>
+          <news-card src="https://via.placeholder.com/500x300" href="#"
+                     title="Nouveauté 2" alt="Image">
+            <p>Aliquam quis purus nulla. In consectetur eget mi ut imperdiet. Phasellus tortor ante, blandit non est ut, elementum dignissim ante. Donec commodo eleifend varius. Fusce nec lobortis erat. Mauris egestas eleifend tellus, non ultricies ligula pharetra sit amet. Donec a sapien iaculis, gravida nibh sed, faucibus nibh. Morbi iaculis porttitor posuere. Sed ut justo congue, pharetra enim sit amet, sollicitudin turpis. Phasellus eu posuere justo.</p>
+          </news-card>
+          <news-card src="https://via.placeholder.com/500x300" href="#"
+                     title="Nouveauté 3" alt="Image">
+            <p>Donec quam diam, dictum quis nulla nec, condimentum finibus lacus. Morbi consequat gravida leo, vel laoreet orci. Ut quis orci aliquet, hendrerit nisl nec, pretium mi. In id porttitor orci. Donec nec ante eu dolor accumsan finibus eu id sapien. Ut urna ligula, dapibus non volutpat vel, vehicula ac nibh. Proin vulputate risus consectetur rhoncus porta. Nulla venenatis et est rutrum finibus. Curabitur at mauris sed est semper lacinia.</p>
+          </news-card>
+        </div>
+        <a href="/news" class="btn center">Voir plus</a>
+      </custom-section>
+      <custom-section title="L'Appel">
+        <p>
+          Le monde dans lequel nous sommes forcés de vivre va mal.<br>
+          Ceux qui détiennent le pouvoir ne font qu'accroître les nombreux problèmes déjà présents : destruction de la planète, de la biosphère, accentuation des inégalités, recul du niveau du bonheur, délaissement de la jeunesse au profit des vieux, délaissement de la culture et de l'éducation au profit de l'économie, émission de gaz à effet de serre par millions de tonnes chaque jour.
+        </p>
+        <p>
+          Nous nous sentons délaisser, abuser par le système et révolter par l'inaction politique.
+        </p>
+        <p>
+          Et si on se regroupait pour faire valoir nos idées ?<br>
+          Et si on prenait le pouvoir démocratiquement pour faire avancer le monde ?
+        </p>
+        <p>
+          Je crois que notre monde arrive à sa perte.<br>
+          Mais je crois aussi qu'un autre monde est possible.<br>
+          Je crois que le seul moyen d'y parvenir est de faire bouger les choses.<br>
+          Je crois que Mai 68 fut le meilleur exemple et il faut qu'on reprenne le pouvoir pour avoir un monde meilleur.
+        <p>
+          Rejoignez l'espoir de vivre dans un monde meilleur.<br>
+          Rejoignez l'action de la jeunesse souhaitant repenser le monde.<br>
+          Rejoignez notre lutte politique pour créer le monde dont on rêve tous.<br>
+          Rejoignez Le Monde de la Nuit, un regroupement qui a été fondé par des penseurs du nouveau monde.
+        </p>
+        <a href="https://discord.gg/9KCJuEYUx2" class="btn btn-primary is-external center mt-2">Nous rejoindre</a>
+      </custom-section>
+    </div>
     <footer class="footer">
-
+      <p>
+        Le Monde de la Nuit - L'Espoir de changer le monde
+      </p>
+      <p>
+        &copy;2022 - Le Monde de la Nuit
+      </p>
+      <p>
+        Contenu sous CC-BY-SA et logiciel sous GPLv3
+      </p>
     </footer>
     <script defer type="module" src="/src/main.ts"></script>
   </body>
