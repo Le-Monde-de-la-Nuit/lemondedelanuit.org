@@ -1,3 +1,6 @@
+@import "../breakpoints";
+@import "../mixins";
+
 .list {
   display: grid;
   gap: 2rem;
@@ -7,5 +10,14 @@
   }
   &.list--two {
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+  &.list--one {
+    grid-template-columns: repeat(auto-fit, minmax(75%, 1fr));
+  }
+  @include until($phone) {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr))!important;
+  }
+  @include until($small-phone) {
+    grid-template-columns: repeat(auto-fit, minmax(75%, 1fr))!important;
   }
 }

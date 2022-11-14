@@ -1,6 +1,13 @@
 @import "../color";
 
-header {
-  height: 50vh;
+.header {
+  height: 50%;
   background: $lighter-second;
+  aspect-ratio: 30/9;
+  &-title {
+    color: $primary;
+  }
+  &-subtitle {
+    color: $dark-primary;
+  }
 }

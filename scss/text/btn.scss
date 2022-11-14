@@ -1,4 +1,6 @@
 @import "../color";
+@import "../mixins";
+@import "../breakpoints";
 
 .btn {
   padding: 1rem 2rem;
@@ -16,6 +18,9 @@
       color: $white;
       background: $light-accent;
     }
+  }
+  @include until($mobile) {
+    width: 30%;
   }
   &.center {
     text-align: center;

@@ -1,8 +1,15 @@
 @import "../mixins";
+@import "../breakpoints";
 
 .title {
   font-weight: bold;
-  margin-bottom: 2rem;
+  width: $destkop-p-width;
+  margin: 0 auto 2rem auto;
+  padding-top: 5rem;
+  &.larger {
+    width: inherit;
+    margin-bottom: 2rem;
+  }
   &.is-1 {
     @include center;
     &.is-not-centered {
@@ -11,8 +18,16 @@
   }
   &.little-padding {
     padding-top: 2rem;
+    @include until($phone) {
+      padding-top: 1.5rem;
+    }
   }
-  padding-top: 5rem;
+  @include until($mobile) {
+    width: $mobile-p-width;
+  }
+  @include until($phone) {
+    padding-top: 2.5rem;
+  }
 }
 .subtitle {
   font-weight: normal;
