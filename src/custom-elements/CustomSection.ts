@@ -7,6 +7,7 @@ export default class CustomSection extends HTMLElement {
         const title = this.getAttribute('title');
         const isLarger = this.hasAttribute('is-larger');
         if (isLarger) {
+            content.replace('<p class="', '<p class="is-larger ');
             this.innerHTML = `<section class="section"><h2 class="is-2 title little-padding larger">${title}</h2>${content}</section>`;
         } else {
             this.innerHTML = `<section class="section"><h2 class="is-2 title little-padding">${title}</h2>${content}</section>`;
