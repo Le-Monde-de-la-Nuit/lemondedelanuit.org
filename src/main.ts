@@ -2,6 +2,7 @@ import '../scss/index.scss';
 import home from "./views/home";
 import registerCustomElement from "./custom-elements";
 import page404 from "./views/page404";
+import about from "./views/about";
 
 export const routes = [
     {
@@ -11,6 +12,10 @@ export const routes = [
     {
         path: '404',
         component: page404
+    },
+    {
+        path: '/about',
+        component: about
     }
 ]
 
