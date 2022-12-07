@@ -1,0 +1,39 @@
+version: '3.1'
+
+services:
+
+  ghost:
+    image: ghost:alpine
+    restart: always
+    environment:
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: root
+      database__connection__password: example
+      database__connection__database: ghost
+      url: http://localhost:2368/
+      server__port: 2368
+      # contrary to the default mentioned in the linked documentation, this image defaults to NODE_ENV=production (so development mode needs to be explicitly specified if desired)
+      NODE_ENV: development
+    volumes:
+      - ./ghost/content:/var/lib/ghost/content
+    depends_on:
+      - db
+    networks:
+      - default
+    ports:
+      - "2368:2368" 
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+     - ./mysql:/var/lib/mysql
+    networks:
+     - default
+
+networks:
+        default:
+                external: false
